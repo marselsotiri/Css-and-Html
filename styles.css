@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+		/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #1c4d87;
+  color: white;
+}
+.header h1{
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+p{
+	text-align: right;
+	font-size: 23px;
+	line-height: 1,2;
+	letter-spacing: 0.5px;
+  color: darkblue;
+}
+
+div.italic{
+  font-style: italic;
+  font-weight: bold;
+
+}
+
+.whcolor{
+  color: white;
+}
+
+p::first-letter{
+  font-size: 100%;
+}
+
+div.solid {
+  height: 230px;
+  width: 100%;
+  border: 2px solid lightskyblue;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+div.background{
+	height: 380px;
+	width: 100%;
+	padding: 15px;
+	margin-top: 20px;
+	background-color:#3d658b;
+}
+
+img {
+  border-radius: 50%;
+  width:100px;
+  float: left; 
+  margin-right: 20px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 1000px;
+  padding-left: 50px;
+  padding-top: 60px;
+  font-size: 27px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.column h2  {
+	color: #1c4d87;
+}
+
+.mycolor {
+  color: lightblue;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column , .header {
+    width: 100%;
+  }
+  
+}
